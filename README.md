@@ -11,7 +11,13 @@ hodp_templates is the HODP Python library for templatizing data visualizations.
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install hodp_templates.
 
 ```bash
-pip install foobar
+pip install git+https://github.com/HarvardOpenData/hodp_templates.git
+```
+
+or
+
+```bash
+pip install git+ssh://git@github.com:HarvardOpenData/hodp_templates.git
 ```
 
 ## Usage
