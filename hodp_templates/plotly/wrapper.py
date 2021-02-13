@@ -1,5 +1,5 @@
 import plotly.graph_objects as go
-import template as tmp
+from .template import hodp_theme, primary_colors
 
 
 def line(data_frame, x, y, line_group, labels, title):
@@ -14,14 +14,14 @@ def line(data_frame, x, y, line_group, labels, title):
             y=df[y],
             name=category,
             mode='lines+markers',
-            marker_color=tmp.primary_colors[i % 5],
+            marker_color=primary_colors[i % 5],
         ))
 
     fig.update_layout(title=title,
                       xaxis={'title': {'text': labels[x]}},
                       yaxis={'title': {'text': labels[y]}},
                       legend={'title': {'text': labels[line_group]}},
-                      template=tmp.hodp_theme)
+                      template=hodp_theme)
 
     return fig
 
@@ -38,13 +38,13 @@ def scatter(data_frame, x, y, line_group, labels, title):
             y=df[y],
             name=category,
             mode='markers',
-            marker_color=tmp.primary_colors[i % 5],
+            marker_color=primary_colors[i % 5],
         ))
 
     fig.update_layout(title=title,
                       xaxis={'title': {'text': labels[x]}},
                       yaxis={'title': {'text': labels[y]}},
                       legend={'title': {'text': labels[line_group]}},
-                      template=tmp.hodp_theme)
+                      template=hodp_theme)
 
     return fig

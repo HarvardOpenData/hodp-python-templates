@@ -1,10 +1,10 @@
-from template import (
+from .template import (
     primary_colors,
     monochrome_colors,
     hodp_theme
 )
 
-from wrapper import (
+from .wrapper import (
     line,
     scatter
 )
