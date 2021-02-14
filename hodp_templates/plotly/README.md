@@ -1,6 +1,6 @@
 # Plotly template
 
-Plotly specific wrappers adn templates for HODP.
+Plotly specific wrappers and templates for HODP.
 
 ## Usage
 

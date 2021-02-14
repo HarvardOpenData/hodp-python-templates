@@ -17,7 +17,7 @@ pip install git+https://github.com/HarvardOpenData/hodp_templates.git
 or
 
 ```bash
-pip install git+ssh://git@github.com:HarvardOpenData/hodp_templates.git
+pip install git+ssh://git@github.com/HarvardOpenData/hodp_templates.git
 ```
 
 ## Usage
