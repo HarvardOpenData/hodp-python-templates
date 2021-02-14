@@ -7,7 +7,10 @@ setup(
     url='https://github.com/jladan/package_demo',
     author='Kevin Huang',
     author_email='kevin_huang@college.harvard.edu',
-    packages=['hodp_templates'],
+    packages=[
+        'hodp_templates',
+        'hodp_templates.plotly'
+    ],
     install_requires=[
         'plotly'
     ],
